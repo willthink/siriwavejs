@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+  <link href="animated.css" rel="stylesheet" type="text/css" />
 	<style>
 		body {
 			font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -52,14 +53,44 @@
 			left: 68px;
 			right: 73px;
 		}
+    .tlt 
+    {
+      color: #fff;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 10px 0 10px 0;
+      display: inline-block;
+      vertical-align: middle;
+      display: block;
+      text-align: center;
+      width: 100%;
+      position:absolute;
+      z-index:1;
+      margin-top:107px;
+      margin-left:-57px;
+    }
+    .highlight
+    {
+      margin: 25px 0px 0px 0px;
+      background-color: #222;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 	</style>
 	<body>
-		<div>
-			<div id="container-ios9" class="container">
+<h1 class="tlt">
+            <ul class="texts" style="display: none">
+                <li> Hello World 1 </li>
+                <li> Hello World 2 </li>
+            </ul>
+        </h1>
+			
+
+		</div>
+    <div id="container-ios9" class="container">
 				<img src="iphone6.png" />
 			</div>
-		</div>
-
+      
 
 		<script src="siriwave9.js"></script>
 		<script>
@@ -117,7 +148,7 @@ function stop()
              shuffle: true,
              sync: true
        },
-       loop: false
+       loop: true
        });
        
      });
