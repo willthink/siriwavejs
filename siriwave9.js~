@@ -156,14 +156,6 @@ SiriWave9.prototype.stop = function() {
 	this.run = false;
 };
 
-SiriWave9.prototype.hide = function() {
-	this.container.removeChild(this.canvas);
-};
-
-SiriWave9.prototype.show = function() {
-	this.container.appendChild(this.canvas);
-}
-
 SiriWave9.prototype.COLORS = [
 [32,133,252],
 [94,252,169],
